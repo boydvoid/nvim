@@ -17,10 +17,11 @@
   source $HOME/.config/nvim/config/which-key.vim
   source $HOME/.config/nvim/config/keybinds.vim
   source $HOME/.config/nvim/config/functions.vim
-
+  
   " All Plugins Settings 
   source $HOME/.config/nvim/config/pluginSettings/nerdTree.vim
   source $HOME/.config/nvim/config/pluginSettings/startify.vim
   source $HOME/.config/nvim/config/pluginSettings/vim-session.vim
+  source $HOME/.config/nvim/config/pluginSettings/coc.vim
   
 

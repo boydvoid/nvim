@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'morhetz/gruvbox'
       Plugin 'drewtempelmeyer/palenight.vim'
   "GIT-------------------- 
-      Plugin 'tpope/vim-fugitive'
+  "    Plugin 'tpope/vim-fugitive'
   "NerdTree
       Plugin 'scrooloose/nerdtree'
   "emmet
