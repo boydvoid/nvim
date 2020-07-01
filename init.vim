@@ -14,7 +14,7 @@
  "1. File Sources
 
 " Source all of our files 
-  source $HOME/.config/nvim/config/whick-key.vim
+  source $HOME/.config/nvim/config/which-key.vim
   source $HOME/.config/nvim/config/keybinds.vim
   source $HOME/.config/nvim/config/editor-settings.vim
 
