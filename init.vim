@@ -23,5 +23,6 @@
   source $HOME/.config/nvim/config/pluginSettings/startify.vim
   source $HOME/.config/nvim/config/pluginSettings/vim-session.vim
   source $HOME/.config/nvim/config/pluginSettings/coc.vim
+  source $HOME/.config/nvim/config/pluginSettings/quickscope.vim
   
 

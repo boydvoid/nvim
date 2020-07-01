@@ -61,4 +61,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'camspiers/lens.vim'
   " CtrlSF
     Plugin 'dyng/ctrlsf.vim' 
+  " quickscope
+    Plugin 'unblevable/quick-scope' 
 call vundle#end()
