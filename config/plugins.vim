@@ -63,4 +63,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'dyng/ctrlsf.vim' 
   " quickscope
     Plugin 'unblevable/quick-scope' 
+  " Ranger
+   "Plugin 'francoiscabrol/ranger.vim'
 call vundle#end()

@@ -32,7 +32,7 @@ set timeoutlen=500
 
 
 set background=dark
-colorscheme gruvbox 
+colorscheme onedark
 syntax on
 
 " Enable folding
