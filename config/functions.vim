@@ -28,3 +28,15 @@ function! CreateCenteredFloatingWindow()
 endfunction
 
 let g:fzf_layout = { 'window': 'call CreateCenteredFloatingWindow()' }
+
+" Open new split then term
+
+function! VsplitTerm()
+  execute ':vsplit'
+  execute ':FloatermNew ranger'
+endfunction
+
+function! HsplitTerm()
+  execute ':split'
+  execute ':FloatermNew ranger'
+endfunction

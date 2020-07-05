@@ -10,26 +10,27 @@ let mapleader=" "
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-set noswapfile
-set nu
-set rnu
-set termguicolors
-set nohlsearch
-set ignorecase
-set encoding=UTF-8
-set laststatus=2
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set noswapfile                    " Disable the swap file
+set nu                            " line numbers
+set rnu                           " Relative Line Numbers
+set termguicolors                 " Gui Colors if its supported
+set nohlsearch                    " Stop the highlighting for the search option
+set ignorecase                    " Ignore letter casing when searching
+set encoding=UTF-8                " UTF-8 encoding
+set laststatus=2                  " Always have a status line
+set expandtab                     " Appropriate number of spaces to insert a Tab
+set tabstop=2                     " Length of Tab
+set softtabstop=2                 " Number of spaces that a Tab counts for while editing
+set shiftwidth=2 
 set background=dark
 set nowrap
 set selection=inclusive
 set autoindent
 set noswapfile
 set smartindent
-set timeoutlen=500
-
+set timeoutlen=300
+set mouse=a
+set cursorline
 
 set background=dark
 colorscheme onedark
@@ -46,7 +47,7 @@ set foldlevel=2
 
 filetype plugin indent on
 
-" show friendvy cat on load
+" show friendly cat on load
 autocmd VimEnter * echo ">^.^<"
 
 if exists('g:GuiLoaded')

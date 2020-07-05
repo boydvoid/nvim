@@ -24,9 +24,9 @@ nnoremap <leader>bm :Marks<CR>
 	nnoremap <leader>rv :source<Space>$MYVIMRC<cr>
 
 "Open vimrc
-	nnoremap <leader>vim :tabnew $MYVIMRC<cr>
+	nnoremap <leader>vim :call OpenVimrc()<cr>
 
-"splits
+"W key
 	nnoremap <leader>wsv :vs<cr>
 	nnoremap <leader>wsh :sp<cr>
 	nnoremap <leader>wl <C-w>l<cr>
@@ -66,8 +66,14 @@ imap jf <Esc>
   nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
 map <leader>ft :NERDTreeToggle<cr>
+"nnoremap <leader>FT :NERDTree .<cr>
+"
+" Floaterm
+nnoremap <leader>trw :FloatermNew ranger<cr>
+nnoremap <leader>trv :call VsplitTerm()<cr>
+nnoremap <leader>trh :call HsplitTerm()<cr>
+nnoremap <leader>tt :FloatermToggle<cr>
 
-nnoremap <leader>FT :NERDTree .<cr>
 
 "set autochdir
 let nerdtreeshowhidden=1
@@ -86,26 +92,14 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
   "open splits normally
     set splitbelow splitright
-  nnoremap <silent> <c-u> :call smooth_scroll#up(&scroll, 3, 7)<CR>
-  nnoremap <silent> <c-d> :call smooth_scroll#down(&scroll, 3, 7)<CR>
-
-  nnoremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 3, 7)<CR>
-  nnoremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 3, 7)<CR>
 
   " FZF
   " up a dir
   nnoremap <silent> <leader>up :cd ..<CR>
-  nnoremap <silent> <c-p> :Files<CR>
+  nnoremap <silent> <c-p> :GFiles<CR>
   nnoremap <silent> <leader>b :Buffers<CR>
   nnoremap <leader>fl :BLines<CR>
 
   "CtrlSF
   nnoremap <leader>fw :CtrlSF
-
-" change font size
-  command! Bigger :call rpcnotify(0, 'Gui', 'Font', substitute(g:GuiFont, '\d\+$', '\=submatch(0)+1', ''))
-  command! Smaller :call rpcnotify(0, 'Gui', 'Font', substitute(g:GuiFont, '\d\+$', '\=submatch(0)-1', ''))
-
-  nnoremap <silent> <leader>= :Bigger<cr>
-  nnoremap <silent> <leader>- :Smaller<cr>
 
