@@ -28,9 +28,11 @@ set selection=inclusive
 set autoindent
 set noswapfile
 set smartindent
-set timeoutlen=300
+set updatetime=300
+set timeoutlen=100
 set mouse=a
 set cursorline
+set autochdir
 
 set background=dark
 colorscheme onedark

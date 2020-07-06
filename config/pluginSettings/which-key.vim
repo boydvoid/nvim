@@ -8,31 +8,31 @@
   " Window Mappings
   let g:which_key_map.w = {
       \ 'name' : '+windows' ,
-      \ 'c' : ['<Space>w'     , 'Center window']          ,
-      \ 'd' : ['<Space>wd'     , 'Delete Window']     ,
-      \ 'h' : ['<Space>wh'     , 'Move to Left Split']    ,
-      \ 'j' : ['<Space>wj'     , 'Move to Bottom Split']  ,
-      \ 'l' : ['<Space>wl'     , 'Move to Right Split']   ,
-      \ 'k' : ['<Space>wk'     , 'Move to Top Split']     ,
+      \ 'c' : [':Goyo'     , 'Center window']          ,
+      \ 'd' : [':q!'     , 'Delete Window without saving']     ,
+      \ 'h' : ['<C-w>h'     , 'Move to Left Split']    ,
+      \ 'j' : ['<C-w>j'     , 'Move to Bottom Split']  ,
+      \ 'l' : ['<C-w>l'     , 'Move to Right Split']   ,
+      \ 'k' : ['<C-w>k'     , 'Move to Top Split']     ,
       \ } 
 
   let g:which_key_map.w.s = {
       \ 'name' : '+split' ,
-      \ 'h' : ['<Space>wsh'     , 'Split Horizontal']     ,
-      \ 'v' : ['<Space>wsv'     , 'Split Vertical']     ,
+      \ 'h' : [':sp'     , 'Split Horizontal']     ,
+      \ 'v' : [':vs'     , 'Split Vertical']     ,
       \ } 
 
   let g:which_key_map.w.r = {
       \ 'name' : '+resize' ,
-      \ 'e' : ['<Space>wre'     , 'Resize Equal']     ,
-      \ 'v' : ['<Space>wrv'     , 'Resize Vertical']     ,
-      \ 'h' : ['<Space>wrh'     , 'Resize Horizontal']     ,
+      \ 'e' : ['<C-w>='     , 'Resize Equal']     ,
+      \ 'v' : [':vertical resize +50'     , 'Resize Vertical']     ,
+      \ 'h' : ['<C-w>_'     , 'Resize Horizontal']     ,
       \ } 
   
   " Comment Mappings
   let g:which_key_map.c = {
       \ 'name' : '+comments' ,
-      \ 'SPC' : ['<Space>c<Space>', 'Toggle Comment'] ,
+      \ 'SPC' : [':NERDCommenterToggle', 'Toggle Comment'] ,
       \ '$' : ['<Space>c$', 'Comment to end of the line'] ,
       \ 'A' : ['<Space>cA', 'Comment Append'] , 
       \ 'y' : ['<Space>cy', 'Yank and comment out'] , 
@@ -40,27 +40,28 @@
 
 
   " Comment Mappings
-  let g:which_key_map.r = {
-      \ 'name' : '+reload' ,
-      \ 'v' : ['<Space>rv', 'Reload Vim'] ,
+  let g:which_key_map.v = {
+      \ 'name' : '+vim' ,
+      \ 'r' : [':source $MYVIMRC', 'Reload Vim'] ,
+      \ 'i' : [':call OpenVimrc()', 'Open Vimrc'] ,
       \ } 
 
   " Terminal Mappings
   let g:which_key_map.t = {
-      \ 'name' : '+terminal' ,
-      \ 't' : ['<Space>tt', 'Show Terminal'] ,
-      \ 'r' : ['<Space>trw', 'Ranger commands'] ,
+      \ 'name' : '+tabs' ,
+      \ 'h' : [':tabfirst', 'Tab First'] ,
+      \ 'j' : [':tabprev', 'Tab Prev'] ,
+      \ 'k' : [':tabnext', 'Tab Next'] ,
+      \ 'l' : [':tablast', 'Tab Last'] ,
+      \ 'n' : [':tabnew', 'Tab New'] ,
       \ } 
 
-  let g:which_key_map.t.r = {
+  let g:which_key_map.r = {
       \ 'name' : '+ranger' ,
-      \ 'w' : ['<Space>trw', 'Ranger in window'] ,
-      \ 'v' : ['<Space>trv', 'Ranger vertical split'] ,
-      \ 'h' : ['<Space>trh', 'Ranger horizontal split'] ,
-      \ } 
-  " Open init.vim
-  let g:which_key_map.v = {
-      \ 'name' : '+Open init.vim' ,
+      \ 't' : [':FloatermToggle', 'Terminal'] ,
+      \ 'v' : [':call VsplitTerm()', 'Ranger vertical split'] ,
+      \ 'h' : [':call HsplitTerm()', 'Ranger horizontal split'] ,
+      \ 'r' : [':FloatermNew ranger', 'Ranger in Window'] ,
       \ } 
 
   " Save

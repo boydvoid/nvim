@@ -21,10 +21,10 @@ nnoremap <leader>bm :Marks<CR>
 
 
 "Reload
-	nnoremap <leader>rv :source<Space>$MYVIMRC<cr>
+	nnoremap <leader>vr :source<Space>$MYVIMRC<cr>
 
 "Open vimrc
-	nnoremap <leader>vim :call OpenVimrc()<cr>
+	nnoremap <leader>vi :call OpenVimrc()<cr>
 
 "W key
 	nnoremap <leader>wsv :vs<cr>
@@ -63,16 +63,16 @@ imap jf <Esc>
   nnoremap <leader>fp zk :echo 'Previous fold'<cr>
 
 "Limelight Toggle
-  nnoremap <leader>llt :Limelight!!<cr>
+  "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
 map <leader>ft :NERDTreeToggle<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
-nnoremap <leader>trw :FloatermNew ranger<cr>
-nnoremap <leader>trv :call VsplitTerm()<cr>
-nnoremap <leader>trh :call HsplitTerm()<cr>
-nnoremap <leader>tt :FloatermToggle<cr>
+nnoremap <leader>rr :FloatermNew ranger<cr>
+nnoremap <leader>rv :call VsplitTerm()<cr>
+nnoremap <leader>rh :call HsplitTerm()<cr>
+nnoremap <leader>rt :FloatermToggle<cr>
 
 
 "set autochdir
