@@ -13,11 +13,9 @@
   "list.selectedSignText": " ",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
-    "markdown",
     "javascript",
     "graphql",
     "html",
-    "yaml",
     "json",
     "python"
   ],
@@ -29,10 +27,7 @@
   "python.condaPath": "~/.miniconda/bin/conda",
   "python.sortImports.path": "~/.miniconda/envs/neovim/bin/isort",
   "python.jediPath": "~/.miniconda/envs/neovim/lib/python3.8/site-packages",
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/snips"
-  ],
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
   "emmet.includeLanguages": {
     "vue-html": "html",
     "javascript": "javascriptreact"
@@ -42,25 +37,16 @@
   "explorer.previewAction.onHover": false,
   "explorer.icon.enableVimDevicons": false,
   "explorer.keyMappings": {
-    "<cr>": [
-      "expandable?",
-      "expand",
-      "open"
-    ],
+    "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
   "languageserver": {
     "bash": {
       "command": "bash-language-server",
-      "args": [
-        "start"
-      ],
-      "filetypes": [
-        "sh"
-      ],
-      "ignoredRootPaths": [
-        "~"
-      ]
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
     }
   }
 }
+

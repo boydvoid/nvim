@@ -100,6 +100,10 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
   nnoremap <silent> <leader>b :Buffers<CR>
   nnoremap <leader>fl :BLines<CR>
 
-  "CtrlSF
-  nnoremap <leader>fw :CtrlSF
+  "CocSearch
+  nnoremap <leader>fw :CocSearch
 
+" git 
+  nnoremap <leader>gs :G<cr>
+  nnoremap <leader>gh :G<cr>
+  nnoremap <leader>gu :G<cr>

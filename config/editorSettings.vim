@@ -32,10 +32,10 @@ set updatetime=300
 set timeoutlen=100
 set mouse=a
 set cursorline
-set autochdir
+"set autochdir
 
 set background=dark
-colorscheme onedark
+colorscheme gruvbox
 syntax on
 
 " Enable folding

@@ -38,6 +38,13 @@
       \ 'y' : ['<Space>cy', 'Yank and comment out'] , 
       \ } 
 
+  " Git Mappings
+  let g:which_key_map.g = {
+      \ 'name' : '+git' ,
+      \ 's' : [':G', 'Git Status'] ,
+      \ 'h' : [':diffget //3', 'Diff Get 3'] ,
+      \ 'u' : [':diffget //2', 'Diff Get 2'] ,
+      \ } 
 
   " Comment Mappings
   let g:which_key_map.v = {

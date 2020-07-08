@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'morhetz/gruvbox'
       Plugin 'drewtempelmeyer/palenight.vim'
   "GIT-------------------- 
-  "    Plugin 'tpope/vim-fugitive'
+     Plugin 'tpope/vim-fugitive'
   "NerdTree
       Plugin 'scrooloose/nerdtree'
   "emmet
@@ -45,7 +45,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'liuchengxu/vim-which-key' 
   " Git
     Plugin 'itchyny/vim-gitbranch'
-    Plugin 'https://github.com/tpope/vim-fugitive'
     Plugin 'https://github.com/airblade/vim-gitgutter'
   " Goyo
     Plugin 'junegunn/goyo.vim'
@@ -65,4 +64,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'unblevable/quick-scope' 
    " Float term
    Plugin 'voldikss/vim-floaterm'
-call vundle#end()
+   "VIFM
+   Plugin 'vifm/vifm.vim'
+   call vundle#end()
