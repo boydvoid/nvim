@@ -29,4 +29,3 @@
   source $HOME/.config/nvim/config/pluginSettings/ctrlsf.vim
   source $HOME/.config/nvim/config/pluginSettings/which-key.vim
   source $HOME/.config/nvim/config/pluginSettings/prettier.vim
-
