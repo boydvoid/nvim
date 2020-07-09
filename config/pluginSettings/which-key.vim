@@ -6,8 +6,8 @@
   let g:which_key_sep = '->'
 
   " Window Mappings
-  let g:which_key_map.w = {
-      \ 'name' : '+windows' ,
+  let g:which_key_map.p = {
+      \ 'name' : '+panes' ,
       \ 'c' : [':Goyo'     , 'Center window']          ,
       \ 'd' : [':q!'     , 'Delete Window without saving']     ,
       \ 'h' : ['<C-w>h'     , 'Move to Left Split']    ,
@@ -16,13 +16,13 @@
       \ 'k' : ['<C-w>k'     , 'Move to Top Split']     ,
       \ } 
 
-  let g:which_key_map.w.s = {
+  let g:which_key_map.p.s = {
       \ 'name' : '+split' ,
       \ 'h' : [':sp'     , 'Split Horizontal']     ,
       \ 'v' : [':vs'     , 'Split Vertical']     ,
       \ } 
 
-  let g:which_key_map.w.r = {
+  let g:which_key_map.p.r = {
       \ 'name' : '+resize' ,
       \ 'e' : ['<C-w>='     , 'Resize Equal']     ,
       \ 'v' : [':vertical resize +50'     , 'Resize Vertical']     ,

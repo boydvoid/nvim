@@ -17,7 +17,7 @@ nnoremap <leader>bm :Marks<CR>
 	nnoremap K 5k
     
 "Close
-	nnoremap <leader>wd :q!<cr>
+	nnoremap <leader>pd :q!<cr>
 
 
 "Reload
@@ -26,18 +26,18 @@ nnoremap <leader>bm :Marks<CR>
 "Open vimrc
 	nnoremap <leader>vi :call OpenVimrc()<cr>
 
-"W key
-	nnoremap <leader>wsv :vs<cr>
-	nnoremap <leader>wsh :sp<cr>
-	nnoremap <leader>wl <C-w>l<cr>
-	nnoremap <leader>wh <C-w>h<cr>
-	nnoremap <leader>wj <C-w>j<cr>
-	nnoremap <leader>wk <C-w>k<cr>
+"P key
+	nnoremap <leader>psv :vs<cr>
+	nnoremap <leader>psh :sp<cr>
+	nnoremap <leader>pl <C-w>l<cr>
+	nnoremap <leader>ph <C-w>h<cr>
+	nnoremap <leader>pj <C-w>j<cr>
+	nnoremap <leader>pk <C-w>k<cr>
 	"mnemonic window full screen horizontal split
-	nnoremap <leader>wrh <C-w>_<cr>
+	nnoremap <leader>prh <C-w>_<cr>
 	"mnemonic window resize vertical split
-	nnoremap <leader>wrv :vertical resize +50<cr>
-	nnoremap <leader>wre <C-w>=<cr>
+	nnoremap <leader>prv :vertical resize +50<cr>
+	nnoremap <leader>pre <C-w>=<cr>
 
 "move text up 
 	nnoremap <A-k> <Up>ddp<Up>
@@ -46,7 +46,7 @@ nnoremap <leader>bm :Marks<CR>
 	nnoremap <A-j> ddp
 
 "Goyo centering and limelight toggle
- nnoremap <leader>wc :Goyo<cr>
+ nnoremap <leader>pc :Goyo<cr>
 
 imap jf <Esc>
 	
@@ -107,3 +107,6 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
   nnoremap <leader>gs :G<cr>
   nnoremap <leader>gh :G<cr>
   nnoremap <leader>gu :G<cr>
+
+" wiki commands
+  

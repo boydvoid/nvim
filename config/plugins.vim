@@ -24,7 +24,7 @@ Plugin 'VundleVim/Vundle.vim'
   " Code Completion
       Plugin 'neoclide/coc.nvim', {'branch': 'release'}
   " Prettier
-      Plugin 'prettier/vim-prettier'
+      "Plugin 'prettier/vim-prettier'
   " Auto Pairs
       Plugin 'jiangmiao/auto-pairs'
   " Commenting
@@ -66,4 +66,6 @@ Plugin 'VundleVim/Vundle.vim'
    Plugin 'voldikss/vim-floaterm'
    "VIFM
    Plugin 'vifm/vifm.vim'
+   " Wiki
+   Plugin 'vimwiki/vimwiki'
    call vundle#end()
