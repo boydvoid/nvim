@@ -71,6 +71,12 @@
       \ 'r' : [':FloatermNew ranger', 'Ranger in Window'] ,
       \ } 
 
+  " double leader
+  let g:which_key_map['SPC'] = {
+      \ 'name' : '+actions' ,
+      \ 'w' : ['<Plug>(easymotion-w)', 'Easymotion below'] ,
+      \ } 
+
   " Save
   let g:which_key_map['s'] = [':w', 'Save']
 

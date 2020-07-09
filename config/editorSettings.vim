@@ -33,7 +33,7 @@ set timeoutlen=100
 set mouse=a
 set cursorline
 "set autochdir
-
+set clipboard=unnamed
 set background=dark
 colorscheme gruvbox
 syntax on

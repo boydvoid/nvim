@@ -110,3 +110,7 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
 " wiki commands
   
+" easymotion
+  map <leader><leader>w <Plug>(easymotion-w)
+  map <leader><leader>b <Plug>(easymotion-b)
+  map <leader><leader>f <Plug>(easymotion-f)
