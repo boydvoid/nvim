@@ -22,19 +22,19 @@ set expandtab                     " Appropriate number of spaces to insert a Tab
 set tabstop=2                     " Length of Tab
 set softtabstop=2                 " Number of spaces that a Tab counts for while editing
 set shiftwidth=2 
-set background=dark
-set nowrap
-set selection=inclusive
+"set background=dark
+set nowrap                        " No text wrapping
+set selection=inclusive           
 set autoindent
 set noswapfile
 set smartindent
 set updatetime=300
-set timeoutlen=100
-set mouse=a
+set timeoutlen=300
+set mouse=a                       " Enable mouse support
 set cursorline
-"set autochdir
+set autochdir
 set clipboard=unnamed
-set background=dark
+set wildignore+==**/node_modules/**
 colorscheme gruvbox
 syntax on
 
@@ -43,6 +43,9 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 set foldlevel=2
+
+let t:is_transparent = 0          " transparent background
+hi Normal guibg=NONE ctermbg=NONE           
 
 " autocomplete
   set wildmode=longest,list,full

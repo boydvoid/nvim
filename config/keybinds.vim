@@ -105,8 +105,8 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
 " git 
   nnoremap <leader>gs :G<cr>
-  nnoremap <leader>gh :G<cr>
-  nnoremap <leader>gu :G<cr>
+  nnoremap <leader>gf :diffget //2<cr>
+  nnoremap <leader>gj :diffget //3<cr>
 
 " wiki commands
   
