@@ -12,7 +12,7 @@
 "                                         \______/ 
 
 " Pre-reqs 
-"This setup requires to have Node, Ranger, and ripgrep installed on your system
+"This setup requires to have Node, Ranger, Python, and ripgrep installed on your system
 
 " Source all of our files 
   source $HOME/.config/nvim/config/plugins.vim

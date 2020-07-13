@@ -2,7 +2,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
   "THEMES-------------------- 
-      Plugin 'joshdick/onedark.vim'
+      Plugin 'christianchiarulli/onedark.vim'
       Plugin 'robaboyd/alphatheme'
       Plugin 'dracula/vim'
       Plugin 'cocopon/iceberg.vim'

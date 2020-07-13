@@ -34,7 +34,7 @@ set cursorline
 set autochdir
 set clipboard=unnamed
 set wildignore+==**/node_modules/**
-colorscheme gruvbox
+colorscheme onedark
 syntax on
 
 " Enable folding
@@ -43,8 +43,8 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
-let t:is_transparent = 0          " transparent background
-hi Normal guibg=NONE ctermbg=NONE           
+"let t:is_transparent = 0          " transparent background
+"hi Normal guibg=NONE ctermbg=NONE           
 
 " autocomplete
   set wildmode=longest,list,full
