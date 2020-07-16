@@ -17,8 +17,7 @@
     "typescript",
     "graphql",
     "html",
-    "json",
-    "python"
+    "json"
   ],
   "coc.preferences.hoverTarget": "float",
   "python.linting.enabled": true,
@@ -50,4 +49,3 @@
     }
   }
 }
-

@@ -43,8 +43,6 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=2
 
-"let t:is_transparent = 0          " transparent background
-"hi Normal guibg=NONE ctermbg=NONE           
 
 " autocomplete
   set wildmode=longest,list,full
@@ -69,5 +67,9 @@ endif
 if $TERM_PROGRAM =~ "iTerm"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+
+
+  let t:is_transparent = 0          " transparent background
+  hi Normal guibg=NONE ctermbg=NONE           
 endif
 
