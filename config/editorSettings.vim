@@ -71,5 +71,6 @@ if $TERM_PROGRAM =~ "iTerm"
 
   let t:is_transparent = 0          " transparent background
   hi Normal guibg=NONE ctermbg=NONE           
+  let g:python3_host_prog = expand('/usr/local/bin/python3.7')
 endif
 

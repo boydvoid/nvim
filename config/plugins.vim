@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
      Plugin 'tpope/vim-fugitive'
   "NerdTree
       Plugin 'scrooloose/nerdtree'
+      Plugin 'ms-jpq/chadtree'
   "emmet
       Plugin 'mattn/emmet-vim.git'
   " lightline	
@@ -64,8 +65,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'unblevable/quick-scope' 
    " Float term
    Plugin 'voldikss/vim-floaterm'
-   "VIFM
-   Plugin 'vifm/vifm.vim'
    " Wiki
    Plugin 'vimwiki/vimwiki'
    call vundle#end()
