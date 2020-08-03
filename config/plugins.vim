@@ -65,8 +65,6 @@ Plugin 'VundleVim/Vundle.vim'
     Plugin 'unblevable/quick-scope' 
    " Float term
    Plugin 'voldikss/vim-floaterm'
-   "VIFM
-   Plugin 'vifm/vifm.vim'
    " Wiki
    Plugin 'vimwiki/vimwiki'
    call vundle#end()

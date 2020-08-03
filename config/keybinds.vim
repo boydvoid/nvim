@@ -8,7 +8,7 @@
   nnoremap <leader>s :w<cr>
 
 " bookmarks
-nnoremap <leader>bm :Marks<CR>
+nnoremap <leader>m :Marks<CR>
 
 "more movement keys
 	nnoremap H 0
@@ -65,7 +65,8 @@ imap jf <Esc>
 "Limelight Toggle
   "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
-map <leader>ft :NERDTreeToggle<cr>
+"map <leader>ft :NERDTreeToggle<cr>
+nnoremap <leader>ft :CHADopen<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
