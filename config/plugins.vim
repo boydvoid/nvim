@@ -12,8 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
   "GIT-------------------- 
      Plugin 'tpope/vim-fugitive'
   "NerdTree
-      Plugin 'scrooloose/nerdtree'
-      Plugin 'ms-jpq/chadtree'
+      Plugin 'preservim/nerdtree'
+      "Plugin 'troydm/easytree.vim'
   "emmet
       Plugin 'mattn/emmet-vim.git'
   " lightline	

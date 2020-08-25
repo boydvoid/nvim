@@ -65,8 +65,8 @@ imap jf <Esc>
 "Limelight Toggle
   "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
-"map <leader>ft :NERDTreeToggle<cr>
-nnoremap <leader>ft :CHADopen<cr>
+map <leader>ft :NERDTreeToggle<cr>
+"nnoremap <leader>ft :CHADopen<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
@@ -107,8 +107,8 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
 " git 
   nnoremap <leader>gs :G<cr>
-  nnoremap <leader>gf :diffget //2<cr>
-  nnoremap <leader>gj :diffget //3<cr>
+  "nnoremap <leader>gf :diffget //2<cr>
+  "nnoremap <leader>gj :diffget //3<cr>
 
 " wiki commands
   
