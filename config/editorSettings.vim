@@ -21,7 +21,7 @@ set expandtab                     " Appropriate number of spaces to insert a Tab
 set tabstop=2                     " Length of Tab
 set softtabstop=2                 " Number of spaces that a Tab counts for while editing
 set shiftwidth=2 
-"set background=dark
+set background=dark
 set nowrap                        " No text wrapping
 set selection=inclusive           
 set autoindent
@@ -34,7 +34,7 @@ set cursorline
 set autochdir
 set clipboard=unnamed
 set wildignore+==**/node_modules/**
-colorscheme onedark
+colorscheme cinnabar
 syntax on
 
 " Enable folding
@@ -69,8 +69,8 @@ if $TERM_PROGRAM =~ "iTerm"
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 
 
-  let t:is_transparent = 0          " transparent background
-  hi Normal guibg=NONE ctermbg=NONE           
+  "let t:is_transparent = 0          " transparent background
+  "hi Normal guibg=NONE ctermbg=NONE           
   let g:python3_host_prog = expand('/usr/local/bin/python3.7')
 endif
 

@@ -65,8 +65,7 @@ imap jf <Esc>
 "Limelight Toggle
   "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
-"map <leader>ft :NERDTreeToggle<cr>
-nnoremap <leader>ft :CHADopen<cr>
+map <leader>ft :NERDTreeToggle<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
