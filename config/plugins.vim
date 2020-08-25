@@ -9,11 +9,11 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'cseelus/vim-colors-lucid'
       Plugin 'morhetz/gruvbox'
       Plugin 'drewtempelmeyer/palenight.vim'
+      Plugin 'vimoxide/vim-cinnabar'
   "GIT-------------------- 
      Plugin 'tpope/vim-fugitive'
   "NerdTree
-      Plugin 'preservim/nerdtree'
-      "Plugin 'troydm/easytree.vim'
+      "Plugin 'scrooloose/nerdtree'
   "emmet
       Plugin 'mattn/emmet-vim.git'
   " lightline	
@@ -23,7 +23,7 @@ Plugin 'VundleVim/Vundle.vim'
   " Multiple Cursors
       Plugin 'terryma/vim-multiple-cursors'
   " Code Completion
-      Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+      "Plugin 'neoclide/coc.nvim', {'branch': 'release'}
   " Prettier
       "Plugin 'prettier/vim-prettier'
   " Auto Pairs
@@ -33,10 +33,6 @@ Plugin 'VundleVim/Vundle.vim'
   " Typescript
     Plugin 'leafgarland/typescript-vim'
     Plugin 'peitalin/vim-jsx-typescript',
-  " Vinegar
-    Plugin 'tpope/vim-vinegar'
-    Plugin 'xolox/vim-session'
-    Plugin 'xolox/vim-misc'
   " FZF
     Plugin 'junegunn/fzf'
     Plugin 'junegunn/fzf.vim'
@@ -47,16 +43,12 @@ Plugin 'VundleVim/Vundle.vim'
   " Git
     Plugin 'itchyny/vim-gitbranch'
     Plugin 'https://github.com/airblade/vim-gitgutter'
-  " Goyo
-    Plugin 'junegunn/goyo.vim'
-  " org 
-    Plugin 'jceb/vim-orgmode'
   " folding
     Plugin 'tmhedberg/SimpylFold'
   " Indent line
     Plugin 'Yggdroot/indentLine'
   " color template
-    Plugin 'lifepillar/vim-colortemplate'
+    "Plugin 'lifepillar/vim-colortemplate'
   " Window resize 
     Plugin 'camspiers/lens.vim'
   " CtrlSF
@@ -64,7 +56,7 @@ Plugin 'VundleVim/Vundle.vim'
   " quickscope
     Plugin 'unblevable/quick-scope' 
    " Float term
-   Plugin 'voldikss/vim-floaterm'
+   "Plugin 'voldikss/vim-floaterm'
    " Wiki
    Plugin 'vimwiki/vimwiki'
    call vundle#end()

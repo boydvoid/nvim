@@ -1,28 +1,34 @@
   
-  let g:coc_global_extensions = [
-    \ 'coc-snippets',
-    \ 'coc-actions',
-    \ 'coc-lists',
-    \ 'coc-emmet',
-    \ 'coc-pairs',
-    \ 'coc-tsserver',
-    \ 'coc-floaterm',
-    \ 'coc-html',
-    \ 'coc-css',
-    \ 'coc-emoji',
-    \ 'coc-cssmodules',
-    \ 'coc-yaml',
-    \ 'coc-python',
-    \ 'coc-explorer',
-    \ 'coc-svg',
-    \ 'coc-prettier',
-    \ 'coc-vimlsp',
-    \ 'coc-xml',
-    \ 'coc-yank',
-    \ 'coc-json',
-    \ 'coc-marketplace',
-    \ ]
+  "let g:coc_global_extensions = [
+    "\ 'coc-snippets',
+    "\ 'coc-actions',
+    "\ 'coc-lists',
+    "\ 'coc-emmet',
+    "\ 'coc-pairs',
+    "\ 'coc-tsserver',
+    "\ 'coc-floaterm',
+    "\ 'coc-html',
+    "\ 'coc-css',
+    "\ 'coc-emoji',
+    "\ 'coc-cssmodules',
+    "\ 'coc-yaml',
+    "\ 'coc-python',
+    "\ 'coc-explorer',
+    "\ 'coc-svg',
+    "\ 'coc-prettier',
+    "\ 'coc-vimlsp',
+    "\ 'coc-xml',
+    "\ 'coc-yank',
+    "\ 'coc-json',
+    "\ 'coc-marketplace',
+    "\ ]
 
+  let g:coc_global_extensions = [
+    \ 'coc-prettier',
+    \ 'coc-tsserver',
+    \ 'coc-marketplace'
+    \ ]
+ 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
