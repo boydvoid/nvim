@@ -10,10 +10,13 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'morhetz/gruvbox'
       Plugin 'drewtempelmeyer/palenight.vim'
       Plugin 'vimoxide/vim-cinnabar'
+      Plugin 'rakr/vim-two-firewatch'
+      Plugin 'haishanh/night-owl.vim'
+      Plugin 'sonph/onehalf', {'rtp': 'vim/'}
   "GIT-------------------- 
      Plugin 'tpope/vim-fugitive'
   "NerdTree
-      "Plugin 'scrooloose/nerdtree'
+      Plugin 'scrooloose/nerdtree'
   "emmet
       Plugin 'mattn/emmet-vim.git'
   " lightline	
@@ -59,4 +62,6 @@ Plugin 'VundleVim/Vundle.vim'
    "Plugin 'voldikss/vim-floaterm'
    " Wiki
    Plugin 'vimwiki/vimwiki'
+   
+   Plugin 'ryanoasis/vim-devicons'
    call vundle#end()

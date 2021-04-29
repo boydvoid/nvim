@@ -27,17 +27,17 @@ nnoremap <leader>m :Marks<CR>
 	nnoremap <leader>vi :call OpenVimrc()<cr>
 
 "P key
-	nnoremap <leader>psv :vs<cr>
-	nnoremap <leader>psh :sp<cr>
-	nnoremap <leader>pl <C-w>l<cr>
-	nnoremap <leader>ph <C-w>h<cr>
-	nnoremap <leader>pj <C-w>j<cr>
-	nnoremap <leader>pk <C-w>k<cr>
+	nnoremap <leader>wsv :vs<cr>
+	nnoremap <leader>wsh :sp<cr>
+	nnoremap <leader>wl <C-w>l<cr>
+	nnoremap <leader>wh <C-w>h<cr>
+	nnoremap <leader>wj <C-w>j<cr>
+	nnoremap <leader>wk <C-w>k<cr>
 	"mnemonic window full screen horizontal split
-	nnoremap <leader>prh <C-w>_<cr>
+	nnoremap <leader>wrh <C-w>_<cr>
 	"mnemonic window resize vertical split
-	nnoremap <leader>prv :vertical resize +50<cr>
-	nnoremap <leader>pre <C-w>=<cr>
+	nnoremap <leader>wrv :vertical resize +50<cr>
+	nnoremap <leader>wre <C-w>=<cr>
 
 "move text up 
 	nnoremap <A-k> <Up>ddp<Up>
@@ -65,7 +65,7 @@ imap jf <Esc>
 "Limelight Toggle
   "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
-map <leader>ft :NERDTreeToggle<cr>
+map <leader>ft :NERDTreeToggle %<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
@@ -95,7 +95,7 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
   " FZF
   " up a dir
-  nnoremap <silent> <leader>up :cd ..<CR>
+  nnoremap <leader>up :cd ../<CR> :pwd<CR>
   nnoremap <silent> <c-p> :GFiles<CR>
   nnoremap <silent> <leader>b :Buffers<CR>
   nnoremap <leader>fl :BLines<CR>
@@ -106,8 +106,9 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
 " git 
   nnoremap <leader>gs :G<cr>
-  nnoremap <leader>gf :diffget //2<cr>
-  nnoremap <leader>gj :diffget //3<cr>
+  nnoremap <leader>gsd :Gvdiff<cr>
+  nnoremap <leader>gsh :diffget //2<cr>
+  nnoremap <leader>gsl :diffget //3<cr>
 
 " wiki commands
   
@@ -115,3 +116,4 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
   map <leader><leader>w <Plug>(easymotion-w)
   map <leader><leader>b <Plug>(easymotion-b)
   map <leader><leader>f <Plug>(easymotion-f)
+

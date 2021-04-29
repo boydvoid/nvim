@@ -9,6 +9,7 @@ let mapleader=" "
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+set guifont=FiraCode\ Nerd\ Font:h14
 set noswapfile                    " Disable the swap file
 set nu                            " line numbers
 set rnu                           " Relative Line Numbers
@@ -34,7 +35,7 @@ set cursorline
 set autochdir
 set clipboard=unnamed
 set wildignore+==**/node_modules/**
-colorscheme cinnabar
+colorscheme onehalfdark
 syntax on
 
 " Enable folding
@@ -58,19 +59,19 @@ GuiTabline 0
 
 GuiPopupmenu 0
 
-GuiFont! JetBrains Mono:h11
+GuiFont! FiraCode Nerd Font:h11
 
 endif
 
 "Change insert character for iterm2
 " Change cursor shape between insert and normal mode in iTerm2.app
-if $TERM_PROGRAM =~ "iTerm"
+if $TERM_PROGRAM =~ "hyper"
     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 
 
-  "let t:is_transparent = 0          " transparent background
-  "hi Normal guibg=NONE ctermbg=NONE           
+  let t:is_transparent = 0          " transparent background
+  hi Normal guibg=NONE ctermbg=NONE           
   let g:python3_host_prog = expand('/usr/local/bin/python3.7')
 endif
 
