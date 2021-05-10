@@ -10,7 +10,6 @@
 "                                         /$$  | $$                                                                     
 "                                        |  $$$$$$/                                                                     
 "                                         \______/ 
-
 " Pre-reqs 
 "This setup requires to have Node, Ranger, Python, and ripgrep installed on your system
 

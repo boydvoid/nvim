@@ -47,7 +47,7 @@ set foldlevel=2
 
 
 " autocomplete
-  set wildmode=longest,list,full
+  set wildmode
 
 filetype plugin indent on
 
