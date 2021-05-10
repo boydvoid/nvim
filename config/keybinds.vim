@@ -95,7 +95,7 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
 
   " Telescope 
   nnoremap <leader>fb <cmd>Telescope buffers<CR>
-  nnoremap <leader>ff <cmd>Telescope find_files<CR>
+  nnoremap <C-p> <cmd>Telescope find_files<CR>
   nnoremap <leader>fw <cmd>Telescope live_grep<CR>
   nnoremap <leader>fh <cmd>Telescope help_tags<CR>
   "nnoremap <leader>ft :Telescope file_browser<CR>

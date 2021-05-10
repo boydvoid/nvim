@@ -36,7 +36,7 @@ set scrolloff=8
 set noautochdir
 set clipboard=unnamed
 set wildignore+==**/node_modules/**
-colorscheme onehalfdark
+colorscheme ghdark 
 syntax on
 
 " Enable folding

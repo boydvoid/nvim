@@ -15,6 +15,7 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'rakr/vim-two-firewatch'
       Plugin 'haishanh/night-owl.vim'
       Plugin '1612492/github.vim'
+      Plugin 'wojciechkepka/vim-github-dark'
       Plugin 'sonph/onehalf', {'rtp': 'vim/'}
   "GIT-------------------- 
      Plugin 'tpope/vim-fugitive'
