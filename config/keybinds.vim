@@ -1,10 +1,11 @@
 
 " Better Tabs
   nnoremap <leader>tn :tabnew<cr>
-  nnoremap <leader>tk :tabnext<cr>
-  nnoremap <leader>tj :tabprev<cr>
-  nnoremap <leader>th :tabfirst<cr>
-  nnoremap <leader>tl :tablast<cr>
+  nnoremap <leader>tl :tabnext<cr>
+  nnoremap <leader>th :tabprevious<cr>
+  nnoremap <leader>bc :BufferClose<cr>
+  nnoremap <leader>tj :tabfirst<cr>
+  nnoremap <leader>tk :tablast<cr>
   nnoremap <leader>s :w<cr>
 
 " bookmarks
@@ -17,7 +18,7 @@ nnoremap <leader>m :Marks<CR>
 	nnoremap K 5k
     
 "Close
-	nnoremap <leader>pd :q!<cr>
+	nnoremap <leader>pd :BufferClose<cr>
 
 
 "Reload
@@ -65,7 +66,6 @@ imap jf <Esc>
 "Limelight Toggle
   "nnoremap <leader>llt :Limelight!!<cr>
 " nerdTree
-map <leader>ft :NERDTreeToggle %<cr>
 "nnoremap <leader>FT :NERDTree .<cr>
 "
 " Floaterm
@@ -93,16 +93,14 @@ imap <expr><tab> emmet#expandAbbrIntelligent("\<tab>")"
   "open splits normally
     set splitbelow splitright
 
-  " FZF
-  " up a dir
-  nnoremap <leader>up :cd ../<CR> :pwd<CR>
-  nnoremap <silent> <c-p> :GFiles<CR>
-  nnoremap <silent> <leader>b :Buffers<CR>
-  nnoremap <leader>fl :BLines<CR>
-
-  "Coc
-  nnoremap <leader>fw :CtrlSF
-  "nnoremap <leader>ft :CocCommand explorer<cr>
+  " Telescope 
+  nnoremap <leader>fb <cmd>Telescope buffers<CR>
+  nnoremap <leader>ff <cmd>Telescope find_files<CR>
+  nnoremap <leader>fw <cmd>Telescope live_grep<CR>
+  nnoremap <leader>fh <cmd>Telescope help_tags<CR>
+  "nnoremap <leader>ft :Telescope file_browser<CR>
+  " Set working directory and open find_files
+  nnoremap <leader>ft :NvimTreeToggle<CR>
 
 " git 
   nnoremap <leader>gs :G<cr>

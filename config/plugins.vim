@@ -1,3 +1,5 @@
+set nocompatible
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -12,11 +14,13 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'vimoxide/vim-cinnabar'
       Plugin 'rakr/vim-two-firewatch'
       Plugin 'haishanh/night-owl.vim'
+      Plugin '1612492/github.vim'
       Plugin 'sonph/onehalf', {'rtp': 'vim/'}
   "GIT-------------------- 
      Plugin 'tpope/vim-fugitive'
   "NerdTree
       Plugin 'scrooloose/nerdtree'
+      Plugin 'kyazdani42/nvim-tree.lua'
   "emmet
       Plugin 'mattn/emmet-vim.git'
   " lightline	
@@ -25,10 +29,6 @@ Plugin 'VundleVim/Vundle.vim'
       Plugin 'tpope/vim-surround'
   " Multiple Cursors
       Plugin 'terryma/vim-multiple-cursors'
-  " Code Completion
-      "Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-  " Prettier
-      "Plugin 'prettier/vim-prettier'
   " Auto Pairs
       Plugin 'jiangmiao/auto-pairs'
   " Commenting
@@ -36,10 +36,6 @@ Plugin 'VundleVim/Vundle.vim'
   " Typescript
     Plugin 'leafgarland/typescript-vim'
     Plugin 'peitalin/vim-jsx-typescript',
-  " FZF
-    Plugin 'junegunn/fzf'
-    Plugin 'junegunn/fzf.vim'
-    Plugin 'mhinz/vim-startify'
     Plugin 'easymotion/vim-easymotion'
   " Which key
     Plugin 'liuchengxu/vim-which-key' 
@@ -64,4 +60,20 @@ Plugin 'VundleVim/Vundle.vim'
    Plugin 'vimwiki/vimwiki'
    
    Plugin 'ryanoasis/vim-devicons'
+   " Fancy Tabs
+   Plugin 'kyazdani42/nvim-web-devicons'
+   "Plugin 'romgrk/barbar.nvim'
+
+   " Telescope
+   Plugin 'nvim-lua/popup.nvim'
+   Plugin 'nvim-lua/plenary.nvim'
+   Plugin 'nvim-telescope/telescope.nvim'
+   " LSP
+   Plugin 'neovim/nvim-lspconfig'
+   Plugin 'kabouzeid/nvim-lspinstall'
+   Plugin 'nvim-lua/completion-nvim'
+   " Dashboard
+   Plugin 'glepnir/dashboard-nvim'
+
+   Plugin 'psliwka/vim-smoothie'
    call vundle#end()

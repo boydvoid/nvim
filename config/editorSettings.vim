@@ -9,7 +9,7 @@ let mapleader=" "
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-set guifont=FiraCode\ Nerd\ Font:h14
+set guifont=FiraCode\ Nerd\ Font:h13
 set noswapfile                    " Disable the swap file
 set nu                            " line numbers
 set rnu                           " Relative Line Numbers
@@ -32,7 +32,8 @@ set updatetime=300
 set timeoutlen=300
 set mouse=a                       " Enable mouse support
 set cursorline
-set autochdir
+set scrolloff=8
+set noautochdir
 set clipboard=unnamed
 set wildignore+==**/node_modules/**
 colorscheme onehalfdark
@@ -59,7 +60,7 @@ GuiTabline 0
 
 GuiPopupmenu 0
 
-GuiFont! FiraCode Nerd Font:h11
+GuiFont! FiraCode Nerd Font:h13
 
 endif
 
