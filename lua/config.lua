@@ -14,3 +14,5 @@ vim.o.background = 'dark'
 vim.o.selection = 'inclusive'
 vim.bo.autoindent = true
 vim.o.mouse = 'a'
+vim.o.scrolloff = 3
+vim.o.cursorline = true
