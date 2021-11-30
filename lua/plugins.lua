@@ -41,4 +41,10 @@ require('packer').startup(function()
 		use 'tpope/vim-commentary'
     use 'beauwilliams/statusline.lua'
 		use 'EdenEast/nightfox.nvim'
+		use 'lukas-reineke/indent-blankline.nvim'
+    use {
+       'prettier/vim-prettier',
+        run = 'npm i --frozen-lockfile --production'
+    }
+
 end)

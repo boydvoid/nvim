@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/bobby/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/bobby/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lightspeed.nvim"] = {
     loaded = true,
     path = "/home/bobby/.local/share/nvim/site/pack/packer/start/lightspeed.nvim",
@@ -194,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bobby/.local/share/nvim/site/pack/packer/start/vim-github-dark",
     url = "https://github.com/wojciechkepka/vim-github-dark"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/home/bobby/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   },
   ["vim-surround"] = {
     loaded = true,

@@ -16,3 +16,5 @@ vim.bo.autoindent = true
 vim.o.mouse = 'a'
 vim.o.scrolloff = 3
 vim.o.cursorline = true
+vim.o.foldmethod = 'indent'
+vim.cmd("set nofoldenable")
