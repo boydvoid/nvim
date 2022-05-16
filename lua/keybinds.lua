@@ -44,3 +44,4 @@ keymap('n', '<leader>d', '<cmd>Lspsaga show_line_diagnostics<cr>', {})
 keymap('n', '<leader>c', '<cmd>Lspsaga code_action<cr>', {})
 
 keymap('n', '<leader>vi', '<cmd>tabnew ~/.config/nvim/lua/init.lua<cr>', {})
+keymap('n', '<leader>ft', ':!echo keybind is <leader>e<cr>', {})
