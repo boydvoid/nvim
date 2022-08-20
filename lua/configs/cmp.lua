@@ -33,20 +33,19 @@ lspkind.init({
 
 local cmp = require'cmp'
 cmp.setup({
-    snippet = {
-      -- REUIRED - you must specify a snippet engine
+	snippet = {
+      -- REQUIRED - you must specify a snippet engine
       expand = function(args)
+        -- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
         require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+        -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+        -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
       end,
     },
-      window = {
-        documentation = {
-          border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-        },
-			completion = {
-				cmp.config.window.bordered()
-			}
-      },
+    window = {
+      completion = cmp.config.window.bordered(),
+      documentation = cmp.config.window.bordered(),
+    },
       mapping = {
         ["<Up>"] = cmp.mapping.select_prev_item(),
         ["<Down>"] = cmp.mapping.select_next_item(),
@@ -72,15 +71,15 @@ cmp.setup({
         }
 	},
     sources = cmp.config.sources({
-				{name = 'nvim_lsp'},
-				{name = 'nvim_lua'},
-				{ name = 'luasnip' }, -- For luasnip users.
-				{ name = 'path' }, -- For luasnip users.
-				-- { name = 'ultisnips' }, -- For ultisnips users.
-				-- { name = 'snippy' }, -- For snippy users.
-				{ name = 'buffer', keyword_length = 3 },
-			}),
-	
+      { name = 'nvim_lsp' },
+      -- { name = 'vsnip' }, -- For vsnip users.
+      { name = 'luasnip' }, -- For luasnip users.
+      -- { name = 'ultisnips' }, -- For ultisnips users.
+      -- { name = 'snippy' }, -- For snippy users.
+    }, {
+      { name = 'buffer' },
+    }),
+
 		experimental = {
 			native_menu = false,
 			ghost_text = true
@@ -97,8 +96,7 @@ cmp.setup({
 				luasnip = "[snip]",
 			}
 		}
-	}
-	-- end
+	},
 })
 
 

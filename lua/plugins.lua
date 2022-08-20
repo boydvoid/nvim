@@ -1,9 +1,16 @@
 
 require('packer').startup(function()
     use 'wbthomason/packer.nvim'
+		-- themes
+		use 'jdsimcoe/abstract.vim'
+		use 'NLKNguyen/papercolor-theme'	
+		use 'morhetz/gruvbox'
+		use 'folke/tokyonight.nvim'
     use 'tomasr/molokai'
     use {'dracula/vim', as = 'dracula'}
     use 'wojciechkepka/vim-github-dark'
+		use 'projekt0n/github-nvim-theme'
+
     use {
        'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
@@ -40,5 +47,5 @@ require('packer').startup(function()
 	use 'Shougo/defx.nvim'
 	use 'onsails/lspkind.nvim'
 	use 'saadparwaiz1/cmp_luasnip'
-
+	use 'vimwiki/vimwiki'
 end)
