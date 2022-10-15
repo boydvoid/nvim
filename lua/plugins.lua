@@ -15,6 +15,7 @@ require('packer').startup(function()
        'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+		use'kabouzeid/nvim-lspinstall'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'

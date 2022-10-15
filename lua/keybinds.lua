@@ -38,6 +38,7 @@ keymap('n', '<leader>fw', '<cmd>Telescope live_grep<CR>', {})
 
 -- LSP
 keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<cr>', {})
+keymap('n', 'gD', '<cmd>tab split<cr><cmd>lua vim.lsp.buf.definition()<cr>', {})
 keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<cr>', {})
 keymap('n', '<leader>k', '<cmd>Lspsaga hover_doc<CR>', {})
 keymap('n', '<leader>d', '<cmd>Lspsaga show_line_diagnostics<cr>', {})
