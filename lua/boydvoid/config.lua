@@ -13,7 +13,7 @@ require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 lsp.setup()
 
 -- set
--- vim.opt.guicursor = ""
+vim.opt.guicursor = ""
 
 
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
