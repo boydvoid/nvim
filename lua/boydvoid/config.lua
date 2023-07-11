@@ -1,6 +1,4 @@
 function transparent()
-    vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-    vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 local lsp = require('lsp-zero').preset({})
@@ -17,6 +15,9 @@ lsp.setup()
 -- set
 -- vim.opt.guicursor = ""
 
+
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -37,3 +38,5 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
+
+vim.opt.formatoptions:remove { "c", "r", "o" }

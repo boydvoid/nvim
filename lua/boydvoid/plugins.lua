@@ -1,5 +1,64 @@
 require("lazy").setup({
+    {
+        "folke/flash.nvim",
+        event = "VeryLazy",
+        opts = {},
+        keys = {
+            {
+                "s",
+                mode = { "n", "x", "o" },
+                function()
+                    require("flash").jump()
+                end,
+                desc = "Flash",
+            },
+            {
+                "S",
+                mode = { "n", "o", "x" },
+                function()
+                    require("flash").treesitter()
+                end,
+                desc = "Flash Treesitter",
+            },
+            {
+                "r",
+                mode = "o",
+                function()
+                    require("flash").remote()
+                end,
+                desc = "Remote Flash",
+            },
+            {
+                "R",
+                mode = { "o", "x" },
+                function()
+                    require("flash").treesitter_search()
+                end,
+                desc = "Flash Treesitter Search",
+            },
+            {
+                "<c-s>",
+                mode = { "c" },
+                function()
+                    require("flash").toggle()
+                end,
+                desc = "Toggle Flash Search",
+            },
+        },
+    },
     { 'nvim-tree/nvim-tree.lua' },
+    {
+        "glepnir/lspsaga.nvim",
+        event = "LspAttach",
+        config = function()
+            require("lspsaga").setup({})
+        end,
+        dependencies = {
+            { "nvim-tree/nvim-web-devicons" },
+            --Please make sure you install markdown and markdown_inline parser
+            { "nvim-treesitter/nvim-treesitter" }
+        }
+    },
     { 'neovim/nvim-lspconfig' },
     { 'jose-elias-alvarez/null-ls.nvim' },
     { 'MunifTanjim/prettier.nvim' },
