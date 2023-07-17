@@ -1,4 +1,8 @@
 require("lazy").setup({
+    { 'othree/html5.vim' },
+    { "pangloss/vim-javascript" },
+    { "evanleck/vim-svelte" },
+    { "Mofiqul/vscode.nvim" },
     {
         "folke/flash.nvim",
         event = "VeryLazy",
@@ -71,19 +75,6 @@ require("lazy").setup({
         config = function()
             require("auto-format").setup()
         end
-    },
-    {
-        'projekt0n/github-nvim-theme',
-        lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-        priority = 1000, -- make sure to load this before all the other start plugins
-        config = function()
-            require('github-theme').setup({
-                -- ...
-            })
-
-            vim.cmd('colorscheme github_dark_dimmed')
-        end,
-
     },
     { 'tpope/vim-commentary' },
     {
