@@ -1,5 +1,11 @@
 require("lazy").setup({
     { 'othree/html5.vim' },
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
     { "pangloss/vim-javascript" },
     { "evanleck/vim-svelte" },
     { "Mofiqul/vscode.nvim" },

@@ -20,6 +20,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("boydvoid.plugins")
+require("boydvoid.plugins.oil")
 require("boydvoid.plugins.lualine")
 require("boydvoid.plugins.autopairs")
 require("boydvoid.plugins.lspzero")

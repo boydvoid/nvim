@@ -45,7 +45,8 @@ keymap('n', '<leader>d', '<cmd>Lspsaga show_line_diagnostics<cr>', {})
 keymap('n', '<leader>c', '<cmd>Lspsaga code_action<cr>', {})
 
 keymap('n', '<leader>vi', '<cmd>tabnew ~/.config/nvim/lua/init.lua<cr>', {})
-keymap('n', '<leader>e', ':NvimTreeToggle<cr>', {})
+-- keymap('n', '<leader>e', ':NvimTreeToggle<cr>', {})
+vim.keymap.set("n", "<leader>e", ":Oil<cr>", { desc = "Open parent directory" })
 
 keymap('n', '<leader>rf', ':%! rustfmt<cr>', {})
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", {})
